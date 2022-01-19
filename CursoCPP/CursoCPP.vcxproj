@@ -140,8 +140,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Dropbox\tmp\dataStructs.cpp" />
     <ClCompile Include="maxSubArraySum.cpp" />
-    <ClCompile Include="mainnew.cpp" />
+    <ClCompile Include="general.cpp" />
+    <ClCompile Include="generatingSubsets.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdc++.h" />

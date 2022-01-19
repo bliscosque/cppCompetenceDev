@@ -1,5 +1,12 @@
 #VS
 *.opendb
+.vs/*
+*/x64/*
+*.idb
+*.pdb
+*/Debug/*
+
+
 # Prerequisites
 *.d
 

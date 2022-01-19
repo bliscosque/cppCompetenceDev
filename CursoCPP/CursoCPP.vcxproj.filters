@@ -18,7 +18,13 @@
     <ClCompile Include="maxSubArraySum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mainnew.cpp">
+    <ClCompile Include="general.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Dropbox\tmp\dataStructs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generatingSubsets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

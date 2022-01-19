@@ -49,11 +49,13 @@ void maxSubArray3(int mat[]) {
 	cout << "Best sum: " << best;
 }
 
-int main() { 
+int main2() { 
 	int mat[] = { -1,2,4,-3,5,2,-5,2 };
 	maxSubArray1(mat);
 	cout << endl;
 	maxSubArray2(mat);
 	cout << endl;
 	maxSubArray3(mat);
+
+	return 0;
 }

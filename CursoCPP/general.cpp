@@ -37,7 +37,7 @@ void foo(int aux[]) {
 	aux[0] = 100;
 }
 
-int main2(int argc, char *argv[]) {
+int main1(int argc, char *argv[]) {
 	int i = 10;
 	cout << ++i << endl;
 	i = 10;
