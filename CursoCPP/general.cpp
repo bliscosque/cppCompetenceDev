@@ -41,6 +41,10 @@ void foo(int aux[]) {
 }
 
 int main1(int argc, char *argv[]) {
+	//redirecionando stdin e stdout
+	//freopen("input.txt", "r", stdin);
+	//freopen("output.txt", "w", stdout);
+
 	int i = 10;
 	cout << ++i << endl;
 	i = 10;
