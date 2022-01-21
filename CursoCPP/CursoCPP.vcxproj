@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Dropbox\tmp\dataStructs.cpp" />
+    <ClCompile Include="DataStructures.cpp" />
     <ClCompile Include="maxSubArraySum.cpp" />
     <ClCompile Include="general.cpp" />
     <ClCompile Include="completeSearch.cpp" />

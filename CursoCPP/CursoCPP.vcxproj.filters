@@ -21,10 +21,10 @@
     <ClCompile Include="general.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Dropbox\tmp\dataStructs.cpp">
+    <ClCompile Include="completeSearch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="completeSearch.cpp">
+    <ClCompile Include="DataStructures.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
