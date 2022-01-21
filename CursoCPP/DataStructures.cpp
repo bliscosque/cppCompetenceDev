@@ -22,7 +22,7 @@ void updateArray(array<int, 6>& arr, int i, int val) {
     arr[i] = 11;
 }
 
-int main()
+int mainDS()
 {
     array<int, 6> arr = { 1,2,3,6,7,8 };
     arr[0] = 10;
