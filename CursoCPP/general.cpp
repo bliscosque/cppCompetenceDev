@@ -15,13 +15,16 @@ public:
 	Pessoa2(int idade) {
 		this->idade = idade;
 	}
-	void setIdade(int idade) {
-		this->idade = idade;
-	}
+	void setIdade(int idade); //apenas prototipo
+
 	int getIdade() {
 		return this->idade;
 	}
 };
+
+void Pessoa2::setIdade(int idade) { //implementacao, dentro do escopo de Pessoa2
+	this->idade = idade;
+}
 
 class Animal {
 public:
@@ -74,7 +77,7 @@ int main1(int argc, char *argv[]) {
 	foo(vet);
 	cout << "vetor pos 0: " << vet[0] << endl;
 
-	for (int i = 0; i < sizeof(vet) / sizeof(int); i++) {
+	for (int i = 0; i < sizeof(vet) / sizeof(int); i++) {//obs IMP: sizeof(vet)/sizeof(int) funciona apenas na funcoes onde vet foi declarado
 		cout << vet[i] << " ";
 	}
 

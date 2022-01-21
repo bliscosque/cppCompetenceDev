@@ -24,7 +24,7 @@
     <ClCompile Include="..\..\..\..\Dropbox\tmp\dataStructs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="generatingSubsets.cpp">
+    <ClCompile Include="completeSearch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

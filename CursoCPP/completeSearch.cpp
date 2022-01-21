@@ -38,7 +38,7 @@ void searchPermutations() {
 	}
 }
 
-int main() {
+int main3() {
 	//generate all subsets of [0,1,2] -> n=3 //ALG1
 	cout << "\n\nSubsets alg 1(recursion): " << endl;
 	searchSubSets(0);
