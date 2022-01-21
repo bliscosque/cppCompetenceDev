@@ -10,6 +10,12 @@
 
 using namespace std;
 
+class Compare {
+public:
+    bool operator()(int a, int b) {
+        return a > b;
+    }
+};
 
 //OBS: ALL STL CONTAINERS ARE PASSED BY VALUE PER DEFAULT. O &arr faz passar por referencia
 void updateArray(array<int, 6>& arr, int i, int val) {
@@ -150,6 +156,22 @@ int main()
     cout << "QUEUE: " << q.front();
     q.pop();
     cout << " " << q.front() << endl;
+
+    //priority_queue
+    cout << "PRIORITY QUEUE" << endl;
+    int arr2[] = { 10,15,20,13,6,90 };
+    //priority_queue<int> heap; //por padrao, eh descendente
+    //priority_queue<int, vector<int>, greater<int>> heap; //crescente -- o greater é um inbuilt comparator
+    //outra opcao, com custom compare
+    priority_queue<int, vector<int>, Compare> heap;
+    for (int x : arr2) {
+        heap.push(x);
+    }
+    while (!heap.empty()) {
+        cout << heap.top() << endl;
+        heap.pop();
+    }
+
 
     return 0;
 }
