@@ -5,6 +5,7 @@
 *.idb
 *.pdb
 */Debug/*
+*.db
 
 
 # Prerequisites
