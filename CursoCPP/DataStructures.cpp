@@ -101,6 +101,8 @@ int mainDS()
     cout << "MULTISET " << ms.count(2) << " " << ms.count(4) << endl;//2 e 0 ---tem duplicados
     ms.erase(3); //apaga todas as ocorrencias
     ms.erase(ms.find(2)); //apaga uma ocorrencia apenas
+    ms.erase(ms.begin()); //apaga o primeiro elemento
+    //int n = *(ms.begin()); --valor do 1o elemento
 
     map<string, int> m;
     m["monkey"] = 3;
@@ -111,6 +113,7 @@ int mainDS()
 
     //working with iterator, algumas funcoes --- begin aponta para 1o elem, end aponta para APOS ultimo elemento
     //sort(v.begin(), v.end()); 
+    //sort(nums.begin(), nums.end(), greater<>()); --- sort descending
     //reverse(v.begin(), v.end()); 
     //random_shuffle(v.begin(), v.end());
     cout << endl << "ITERATORS!!!" << endl;
