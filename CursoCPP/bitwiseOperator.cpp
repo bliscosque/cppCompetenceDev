@@ -74,6 +74,47 @@ int main() {
 	//~ -> not
 	//<< -> binary left shift
 	//>> -> binary right shift
+
+	//para saber elemento nao duplicado de uma matriz (ex: 2,2,3,3,5) = 5 (unico elemento nao duplicado)
+	//fazer XOR entre todos os elementos, ja que (x XOR x)=0
+	
+	//se a matriz tiver 2 elementos nao duplicados, o resultado do XOR sera XOR desses 2 elementos nao dup.
+	//ver posicao do set bit no XOR -> juntar elementos originais com set bit na mesma posicao e fazer novo XOR
+	//obtera com isso um dos numeros. Fazendo XOR desse numero com o XOR dos 2, obtem o segundo numero
+	//solucao do problema anterior (2N+2)
+	vector<int> arr = { 1,3,5,4,3,1,5,7 };
+	int result = 0;
+	for (int i = 0; i < arr.size(); i++) {
+		result = result ^ arr[i];
+	}
+	//position do set bit
+	int pos = 0;
+	int temp = result;
+	while((temp&1)==0) {
+		pos++;
+		temp = temp >> 1;
+	}
+	//filtrando numeros que tem set bits
+	int setA = 0;
+	int setB = 0;
+	int mask = (1 << pos);
+	for (int i = 0; i < arr.size(); i++) {
+		if ((arr[i] & mask) > 0) {
+			setA = setA ^ arr[i];
+		}
+		else {
+			setB = setB ^ arr[i];
+		}
+	}
+	cout << "NumA: " << setA << endl;
+	cout << "NumB: " << setB << endl;
+
+
+	//Unique numbers 3N+1
+	//Somar bits de cada posicao do numero. O numero estara no formato 3N+1, sendo que o +1 sera apenas para numero nao repetido
+	//Fazer cada bit%3 para saber esse restante, que será o numero
+
+
 	
 	//OddOrEven
 	int num = 111;

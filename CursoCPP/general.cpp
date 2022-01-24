@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <string>
 using namespace std;
 
 typedef struct {
@@ -120,6 +121,10 @@ int main1(int argc, char *argv[]) {
 	cout << animais[0].nome << endl;
 	cout << animais[1].nome << endl;
 	cout << animais[2].nome << endl;
+
+	//concatenando string e inteiro
+	int bulls = 10;
+	string ret = to_string(bulls) + "A";
 
 
 	return 0;

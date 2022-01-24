@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bitwiseOperator.cpp" />
     <ClCompile Include="DataStructures.cpp" />
     <ClCompile Include="maxSubArraySum.cpp" />
     <ClCompile Include="general.cpp" />
