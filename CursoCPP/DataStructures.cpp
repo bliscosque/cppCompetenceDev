@@ -111,6 +111,16 @@ int mainDS()
     for (auto x : m)
         cout << x.first << " " << x.second << endl; //imprime chave e valor
 
+    //multimap
+
+    //multimap<string, string> mm;
+    //mm.insert({ key, value });
+    //find all elements with key
+    //auto it1 = mm.equal_range(inp);
+    //for (auto it = it1.first; it != it1.second; it++) {
+    //cout << it->first << " " << it->second << endl; }
+
+
     //working with iterator, algumas funcoes --- begin aponta para 1o elem, end aponta para APOS ultimo elemento
     //sort(v.begin(), v.end()); 
     //sort(nums.begin(), nums.end(), greater<>()); --- sort descending
