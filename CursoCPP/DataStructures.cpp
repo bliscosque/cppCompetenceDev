@@ -86,8 +86,10 @@ int mainDS()
     // print_vector(my_vector);
 
     //vector.remove does NOT remove elements from the "end". we must run an erase after
-    my_vector.erase(std::remove(my_vector.begin(), my_vector.end(), 2), my_vector.end());
-    my_vector.erase(std::remove_if(my_vector.begin(), my_vector.end(), is_odd), my_vector.end());
+    my_vector.erase(remove(my_vector.begin(), my_vector.end(), 2), my_vector.end());
+    my_vector.erase(remove_if(my_vector.begin(), my_vector.end(), is_odd), my_vector.end());
+    //initializing multidimensional vectors
+    vector<vector<int>> matrix(3, vector<int>(2, 0));
 
     string a = "Thiago";
     string b = a + a;

@@ -1,7 +1,16 @@
 #include <iostream>
 #include <string.h>
 #include <string>
+#include<vector>
 using namespace std;
+
+// typedef Type AliasName
+// typedef std::vector<int> Vector;
+// typedef std::vector<std::vector<int>> Matrix;
+
+// using AliasName = Type;
+using Vector = vector<int>;
+using Matrix = vector<vector<int>>;
 
 typedef struct {
 	char nome[100];
