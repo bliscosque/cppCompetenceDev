@@ -22,6 +22,11 @@ void updateArray(array<int, 6>& arr, int i, int val) {
     arr[i] = 11;
 }
 
+bool is_odd(const int i)
+{
+    return i % 2;
+}
+
 int mainDS()
 {
     array<int, 6> arr = { 1,2,3,6,7,8 };
@@ -74,6 +79,15 @@ int mainDS()
     //arr.capacity()
     //get the max size (based on RAM)
     //arr.max_size()
+
+    vector<int> my_vector(10, 0);
+    // std::vector<int>::iterator it = std::remove(my_vector.begin(), my_vector.end(), 2);
+    // std::cout << *it << std::endl;
+    // print_vector(my_vector);
+
+    //vector.remove does NOT remove elements from the "end". we must run an erase after
+    my_vector.erase(std::remove(my_vector.begin(), my_vector.end(), 2), my_vector.end());
+    my_vector.erase(std::remove_if(my_vector.begin(), my_vector.end(), is_odd), my_vector.end());
 
     string a = "Thiago";
     string b = a + a;
