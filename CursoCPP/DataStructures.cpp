@@ -62,7 +62,7 @@ int mainDS()
     }
     cout << v.back() << endl << endl; //retorna ultimo elemento
     v.pop_back(); //remove ultimo elemento
-    vector<int> v1(10, 1); //10 elementos, inicializados com 1
+    vector<int> v1(10, 1); //10 elementos, inicializados com 1 - Fill Constructor
     for (auto x : v1) {
         cout << x << endl;
     }
