@@ -7,6 +7,7 @@
 #include <stack>
 #include <queue>
 #include <array>
+#include <string>
 
 using namespace std;
 
@@ -96,6 +97,9 @@ int mainDS()
     cout << b << endl;
     string c = b.substr(2, 4); //inicia pos 2, tamanho 4
     cout << c << endl;
+
+    //le uma string, incluindo espacos e "enter", ate o .
+    getline(cin, a, '.');
 
     set<int> s; // unordered_set, uma implementacao de set nao ordenado
     s.insert(3);
